@@ -9,13 +9,13 @@
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <CreatedTimestamp>2024-03-21.12:40:00</CreatedTimestamp>
       <Current>1</Current>
-      <LastIntrospectionL1Timestamp>2024-05-30.22:45:37</LastIntrospectionL1Timestamp>
-      <LastIntrospectionL2Timestamp>2024-05-30.22:45:37</LastIntrospectionL2Timestamp>
-      <LastIntrospectionL3Timestamp>2024-05-30.22:45:37</LastIntrospectionL3Timestamp>
+      <LastIntrospectionL1Timestamp>2024-07-05.18:34:52</LastIntrospectionL1Timestamp>
+      <LastIntrospectionL2Timestamp>2024-07-05.18:34:52</LastIntrospectionL2Timestamp>
+      <LastIntrospectionL3Timestamp>2024-07-05.18:34:52</LastIntrospectionL3Timestamp>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2024-05-30.16:45:41</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-07-05.12:35:20</LastIntrospectionLocalTimestamp>
       <LastIntrospectionVersion>200820</LastIntrospectionVersion>
-      <ModifiedTimestamp>2024-05-30.22:45:37</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-07-05.18:34:50</ModifiedTimestamp>
       <ObjectId>108</ObjectId>
     </schema>
     <schema id="3" parent="1" name="PUBLIC">
@@ -327,181 +327,227 @@
       <ObjectId>76064</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="88" parent="2" name="SMS_BATCH">
+    <table id="88" parent="2" name="BULK_SMS_USERS">
+      <CreatedTimestamp>2024-06-22.21:08:08</CreatedTimestamp>
+      <DetailsLevel>3</DetailsLevel>
+      <ModifiedTimestamp>2024-06-22.21:08:08</ModifiedTimestamp>
+      <ObjectId>76775</ObjectId>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="89" parent="2" name="KPLC_BULK_SMS">
+      <CreatedTimestamp>2024-06-22.21:08:08</CreatedTimestamp>
+      <DetailsLevel>3</DetailsLevel>
+      <ModifiedTimestamp>2024-06-22.21:08:08</ModifiedTimestamp>
+      <ObjectId>76777</ObjectId>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="90" parent="2" name="KPLC_SMS_BATCH">
+      <CreatedTimestamp>2024-06-22.21:08:08</CreatedTimestamp>
+      <DetailsLevel>3</DetailsLevel>
+      <ModifiedTimestamp>2024-06-22.21:08:08</ModifiedTimestamp>
+      <ObjectId>76779</ObjectId>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="91" parent="2" name="PREPAID">
+      <CreatedTimestamp>2024-07-05.18:34:50</CreatedTimestamp>
+      <DetailsLevel>3</DetailsLevel>
+      <ModifiedTimestamp>2024-07-05.18:34:50</ModifiedTimestamp>
+      <ObjectId>77009</ObjectId>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="92" parent="2" name="SMS_BATCH">
       <CreatedTimestamp>2024-04-09.20:20:02</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
       <ModifiedTimestamp>2024-04-09.20:20:02</ModifiedTimestamp>
       <ObjectId>76066</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="89" parent="2" name="SMS_USERS">
+    <table id="93" parent="2" name="SMS_USERS">
       <CreatedTimestamp>2024-04-07.18:48:19</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
       <ModifiedTimestamp>2024-04-07.18:58:51</ModifiedTimestamp>
       <ObjectId>76062</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="90" parent="2" name="USERS">
+    <table id="94" parent="2" name="USERS">
       <CreatedTimestamp>2024-04-05.02:29:02</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
       <ModifiedTimestamp>2024-04-06.00:09:30</ModifiedTimestamp>
       <ObjectId>75915</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <column id="91" parent="85" name="EVENT_ID_CNTY">
+    <view id="95" parent="2" name="HIGH_FATALITY_EVENTS">
+      <CreatedTimestamp>2024-06-20.17:50:25</CreatedTimestamp>
+      <DependsOnIds>76434</DependsOnIds>
+      <DetailsLevel>3</DetailsLevel>
+      <Modifiable>1</Modifiable>
+      <ModifiedTimestamp>2024-06-20.17:50:25</ModifiedTimestamp>
+      <ObjectId>76674</ObjectId>
+      <SourceTextLength>156</SourceTextLength>
+    </view>
+    <view id="96" parent="2" name="HIGH_FATALITY_EVENTS_WITH_MAX">
+      <CreatedTimestamp>2024-06-20.17:50:43</CreatedTimestamp>
+      <DependsOnIds>76674</DependsOnIds>
+      <DetailsLevel>3</DetailsLevel>
+      <Modifiable>1</Modifiable>
+      <ModifiedTimestamp>2024-06-20.17:50:43</ModifiedTimestamp>
+      <ObjectId>76675</ObjectId>
+      <SourceTextLength>209</SourceTextLength>
+    </view>
+    <column id="97" parent="85" name="EVENT_ID_CNTY">
       <DasType>CLOB|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="92" parent="85" name="EVENT_DATE">
+    <column id="98" parent="85" name="EVENT_DATE">
       <DasType>CLOB|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="93" parent="85" name="YEAR">
+    <column id="99" parent="85" name="YEAR">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="94" parent="85" name="TIME_PRECISION">
+    <column id="100" parent="85" name="TIME_PRECISION">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="95" parent="85" name="DISORDER_TYPE">
+    <column id="101" parent="85" name="DISORDER_TYPE">
       <DasType>CLOB|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="96" parent="85" name="EVENT_TYPE">
+    <column id="102" parent="85" name="EVENT_TYPE">
       <DasType>CLOB|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="97" parent="85" name="SUB_EVENT_TYPE">
+    <column id="103" parent="85" name="SUB_EVENT_TYPE">
       <DasType>CLOB|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="98" parent="85" name="ACTOR1">
+    <column id="104" parent="85" name="ACTOR1">
       <DasType>CLOB|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="99" parent="85" name="ASSOC_ACTOR_1">
+    <column id="105" parent="85" name="ASSOC_ACTOR_1">
       <DasType>CLOB|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="100" parent="85" name="INTER1">
+    <column id="106" parent="85" name="INTER1">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="101" parent="85" name="ACTOR2">
+    <column id="107" parent="85" name="ACTOR2">
       <DasType>CLOB|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="102" parent="85" name="ASSOC_ACTOR_2">
+    <column id="108" parent="85" name="ASSOC_ACTOR_2">
       <DasType>CLOB|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="103" parent="85" name="INTER2">
+    <column id="109" parent="85" name="INTER2">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="104" parent="85" name="INTERACTION">
+    <column id="110" parent="85" name="INTERACTION">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="105" parent="85" name="CIVILIAN_TARGETING">
+    <column id="111" parent="85" name="CIVILIAN_TARGETING">
       <DasType>CLOB|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="106" parent="85" name="ISO">
+    <column id="112" parent="85" name="ISO">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="107" parent="85" name="REGION">
+    <column id="113" parent="85" name="REGION">
       <DasType>CLOB|0s</DasType>
       <Position>17</Position>
     </column>
-    <column id="108" parent="85" name="COUNTRY">
+    <column id="114" parent="85" name="COUNTRY">
       <DasType>CLOB|0s</DasType>
       <Position>18</Position>
     </column>
-    <column id="109" parent="85" name="ADMIN1">
+    <column id="115" parent="85" name="ADMIN1">
       <DasType>CLOB|0s</DasType>
       <Position>19</Position>
     </column>
-    <column id="110" parent="85" name="ADMIN2">
+    <column id="116" parent="85" name="ADMIN2">
       <DasType>CLOB|0s</DasType>
       <Position>20</Position>
     </column>
-    <column id="111" parent="85" name="ADMIN3">
+    <column id="117" parent="85" name="ADMIN3">
       <DasType>CLOB|0s</DasType>
       <Position>21</Position>
     </column>
-    <column id="112" parent="85" name="LOCATION">
+    <column id="118" parent="85" name="LOCATION">
       <DasType>CLOB|0s</DasType>
       <Position>22</Position>
     </column>
-    <column id="113" parent="85" name="LATITUDE">
+    <column id="119" parent="85" name="LATITUDE">
       <DasType>FLOAT(*)|0s</DasType>
       <Position>23</Position>
     </column>
-    <column id="114" parent="85" name="LONGITUDE">
+    <column id="120" parent="85" name="LONGITUDE">
       <DasType>FLOAT(*)|0s</DasType>
       <Position>24</Position>
     </column>
-    <column id="115" parent="85" name="GEO_PRECISION">
+    <column id="121" parent="85" name="GEO_PRECISION">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>25</Position>
     </column>
-    <column id="116" parent="85" name="SOURCE">
+    <column id="122" parent="85" name="SOURCE">
       <DasType>CLOB|0s</DasType>
       <Position>26</Position>
     </column>
-    <column id="117" parent="85" name="SOURCE_SCALE">
+    <column id="123" parent="85" name="SOURCE_SCALE">
       <DasType>CLOB|0s</DasType>
       <Position>27</Position>
     </column>
-    <column id="118" parent="85" name="NOTES">
+    <column id="124" parent="85" name="NOTES">
       <DasType>CLOB|0s</DasType>
       <Position>28</Position>
     </column>
-    <column id="119" parent="85" name="FATALITIES">
+    <column id="125" parent="85" name="FATALITIES">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>29</Position>
     </column>
-    <column id="120" parent="85" name="TAGS">
+    <column id="126" parent="85" name="TAGS">
       <DasType>CLOB|0s</DasType>
       <Position>30</Position>
     </column>
-    <column id="121" parent="85" name="TIMESTAMP">
+    <column id="127" parent="85" name="TIMESTAMP">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>31</Position>
     </column>
-    <column id="122" parent="85" name="POPULATION_BEST">
+    <column id="128" parent="85" name="POPULATION_BEST">
       <DasType>NUMBER(*)|0s</DasType>
       <Position>32</Position>
     </column>
-    <column id="123" parent="86" name="BOOK_ID">
+    <column id="129" parent="86" name="BOOK_ID">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="124" parent="86" name="TITLE">
+    <column id="130" parent="86" name="TITLE">
       <DasType>VARCHAR2(100 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="125" parent="86" name="AUTHOR">
+    <column id="131" parent="86" name="AUTHOR">
       <DasType>VARCHAR2(100 byte)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="126" parent="86" name="PUBLICATION_DATE">
+    <column id="132" parent="86" name="PUBLICATION_DATE">
       <DasType>DATE|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="127" parent="86" name="GENRE">
+    <column id="133" parent="86" name="GENRE">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="128" parent="86" name="PRICE">
+    <column id="134" parent="86" name="PRICE">
       <DasType>NUMBER(8,2)|0s</DasType>
       <Position>6</Position>
     </column>
-    <index id="129" parent="86" name="SYS_C008220">
+    <index id="135" parent="86" name="SYS_C008220">
       <ColNames>BOOK_ID</ColNames>
       <CreatedTimestamp>2024-03-21.12:40:00</CreatedTimestamp>
       <ModifiedTimestamp>2024-03-21.12:40:00</ModifiedTimestamp>
@@ -510,47 +556,47 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="130" parent="86" name="SYS_C008220">
+    <key id="136" parent="86" name="SYS_C008220">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-03-21.12:40:00</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>SYS_C008220</UnderlyingIndexName>
     </key>
-    <column id="131" parent="87" name="SMS_ID">
+    <column id="137" parent="87" name="SMS_ID">
       <DasType>NUMBER(19)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="132" parent="87" name="BATCH_ID">
+    <column id="138" parent="87" name="BATCH_ID">
       <DasType>NUMBER(19)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="133" parent="87" name="CREATE_DATE">
+    <column id="139" parent="87" name="CREATE_DATE">
       <DasType>TIMESTAMP(6)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="134" parent="87" name="DATE_SENT">
+    <column id="140" parent="87" name="DATE_SENT">
       <DasType>TIMESTAMP(6)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="135" parent="87" name="MESSAGES">
+    <column id="141" parent="87" name="MESSAGES">
       <DasType>VARCHAR2(255 char)|0us</DasType>
       <Position>5</Position>
     </column>
-    <column id="136" parent="87" name="PHONE_NUMBER">
+    <column id="142" parent="87" name="PHONE_NUMBER">
       <DasType>VARCHAR2(255 char)|0us</DasType>
       <Position>6</Position>
     </column>
-    <column id="137" parent="87" name="STATUS">
+    <column id="143" parent="87" name="STATUS">
       <DasType>VARCHAR2(255 char)|0us</DasType>
       <Position>7</Position>
     </column>
-    <column id="138" parent="87" name="USER_ID">
+    <column id="144" parent="87" name="USER_ID">
       <DasType>NUMBER(19)|0s</DasType>
       <Position>8</Position>
     </column>
-    <index id="139" parent="87" name="SYS_C008234">
+    <index id="145" parent="87" name="SYS_C008234">
       <ColNames>SMS_ID</ColNames>
       <CreatedTimestamp>2024-04-09.20:20:01</CreatedTimestamp>
       <ModifiedTimestamp>2024-04-09.20:20:01</ModifiedTimestamp>
@@ -559,14 +605,14 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="140" parent="87" name="SYS_C008234">
+    <key id="146" parent="87" name="SYS_C008234">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-04-09.20:20:02</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>SYS_C008234</UnderlyingIndexName>
     </key>
-    <trigger id="141" parent="87" name="TRIGGER_BULK_SMS">
+    <trigger id="147" parent="87" name="TRIGGER_BULK_SMS">
       <CreatedTimestamp>2024-04-09.20:59:53</CreatedTimestamp>
       <Events>I</Events>
       <ModifiedTimestamp>2024-04-09.20:59:53</ModifiedTimestamp>
@@ -574,35 +620,196 @@
       <SourceTextLength>72</SourceTextLength>
       <Turn>before-row</Turn>
     </trigger>
-    <column id="142" parent="88" name="BATCH_ID">
+    <column id="148" parent="88" name="STAFF_ID">
       <DasType>NUMBER(19)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="143" parent="88" name="BATCH_DESCRIPTION">
+    <column id="149" parent="88" name="CREATE_DATE">
+      <DasType>DATE|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="150" parent="88" name="EMAIL">
+      <DasType>VARCHAR2(30 char)|0us</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="151" parent="88" name="FIRSTNAME">
+      <DasType>VARCHAR2(25 char)|0us</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="152" parent="88" name="LASTNAME">
+      <DasType>VARCHAR2(25 char)|0us</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="153" parent="88" name="PASSWORD">
+      <DasType>VARCHAR2(100 char)|0us</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="154" parent="88" name="STAFF_NO">
+      <DasType>VARCHAR2(25 char)|0us</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <index id="155" parent="88" name="SYS_C008246">
+      <ColNames>STAFF_ID</ColNames>
+      <CreatedTimestamp>2024-06-22.21:08:08</CreatedTimestamp>
+      <ModifiedTimestamp>2024-06-22.21:08:08</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>76776</ObjectId>
+      <Unique>1</Unique>
+      <TablespaceName>USERS</TablespaceName>
+    </index>
+    <key id="156" parent="88" name="SYS_C008246">
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ModifiedTimestamp>2024-06-22.21:08:08</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>SYS_C008246</UnderlyingIndexName>
+    </key>
+    <column id="157" parent="89" name="SMS_ID">
+      <DasType>NUMBER(19)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="158" parent="89" name="BATCH_ID">
+      <DasType>NUMBER(19)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="159" parent="89" name="CREATE_DATE">
+      <DasType>DATE|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="160" parent="89" name="DATE_SENT">
+      <DasType>DATE|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="161" parent="89" name="MESSAGES">
+      <DasType>VARCHAR2(500 char)|0us</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="162" parent="89" name="PHONE_NUMBER">
+      <DasType>VARCHAR2(64 char)|0us</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="163" parent="89" name="STATUS">
+      <DasType>VARCHAR2(20 char)|0us</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <index id="164" parent="89" name="SYS_C008252">
+      <ColNames>SMS_ID</ColNames>
+      <CreatedTimestamp>2024-06-22.21:08:08</CreatedTimestamp>
+      <ModifiedTimestamp>2024-06-22.21:08:08</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>76778</ObjectId>
+      <Unique>1</Unique>
+      <TablespaceName>USERS</TablespaceName>
+    </index>
+    <key id="165" parent="89" name="SYS_C008252">
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ModifiedTimestamp>2024-06-22.21:08:08</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>SYS_C008252</UnderlyingIndexName>
+    </key>
+    <column id="166" parent="90" name="BATCH_ID">
+      <DasType>NUMBER(19)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="167" parent="90" name="BATCH_DESCRIPTION">
+      <DasType>VARCHAR2(50 char)|0us</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="168" parent="90" name="CREATE_DATE">
+      <DasType>DATE|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="169" parent="90" name="DATE_SENT">
+      <DasType>DATE|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="170" parent="90" name="STAFF_NO">
+      <DasType>VARCHAR2(25 char)|0us</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="171" parent="90" name="STATUS">
+      <DasType>VARCHAR2(15 char)|0us</DasType>
+      <Position>6</Position>
+    </column>
+    <index id="172" parent="90" name="SYS_C008255">
+      <ColNames>BATCH_ID</ColNames>
+      <CreatedTimestamp>2024-06-22.21:08:08</CreatedTimestamp>
+      <ModifiedTimestamp>2024-06-22.21:08:08</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>76780</ObjectId>
+      <Unique>1</Unique>
+      <TablespaceName>USERS</TablespaceName>
+    </index>
+    <key id="173" parent="90" name="SYS_C008255">
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ModifiedTimestamp>2024-06-22.21:08:08</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>SYS_C008255</UnderlyingIndexName>
+    </key>
+    <column id="174" parent="91" name="SERVICE_ID">
+      <DasType>NUMBER(*)|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="175" parent="91" name="AMOUNT">
+      <DasType>NUMBER(20,2)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="176" parent="91" name="CHANNEL">
+      <DasType>VARCHAR2(50 byte)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="177" parent="91" name="CURRENCY">
+      <DasType>VARCHAR2(10 byte)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="178" parent="91" name="TRANSACTION_DATE">
+      <DasType>DATE|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="179" parent="92" name="BATCH_ID">
+      <DasType>NUMBER(19)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="180" parent="92" name="BATCH_DESCRIPTION">
       <DasType>VARCHAR2(255 char)|0us</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="144" parent="88" name="CREAT_DATE">
+    <column id="181" parent="92" name="CREAT_DATE">
       <DasType>TIMESTAMP(6)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="145" parent="88" name="DATE_SENT">
+    <column id="182" parent="92" name="DATE_SENT">
       <DasType>TIMESTAMP(6)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="146" parent="88" name="STATUS">
+    <column id="183" parent="92" name="STATUS">
       <DasType>VARCHAR2(255 char)|0us</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="147" parent="88" name="USER_ID">
+    <column id="184" parent="92" name="USER_ID">
       <DasType>NUMBER(19)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <index id="148" parent="88" name="SYS_C008239">
+    <index id="185" parent="92" name="SYS_C008239">
       <ColNames>BATCH_ID</ColNames>
       <CreatedTimestamp>2024-04-09.20:20:02</CreatedTimestamp>
       <ModifiedTimestamp>2024-04-09.20:20:02</ModifiedTimestamp>
@@ -611,43 +818,43 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="149" parent="88" name="SYS_C008239">
+    <key id="186" parent="92" name="SYS_C008239">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-04-09.20:20:02</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>SYS_C008239</UnderlyingIndexName>
     </key>
-    <column id="150" parent="89" name="USER_ID">
+    <column id="187" parent="93" name="USER_ID">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="151" parent="89" name="USER_NAME">
+    <column id="188" parent="93" name="USER_NAME">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="152" parent="89" name="USER_EMAIL">
+    <column id="189" parent="93" name="USER_EMAIL">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="153" parent="89" name="PASSWORD">
+    <column id="190" parent="93" name="PASSWORD">
       <DasType>VARCHAR2(100 byte)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="154" parent="89" name="ENABLED">
+    <column id="191" parent="93" name="ENABLED">
       <DasType>NUMBER(1)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="155" parent="89" name="LOCKED">
+    <column id="192" parent="93" name="LOCKED">
       <DasType>NUMBER(1)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="156" parent="89" name="USER_ROLE">
+    <column id="193" parent="93" name="USER_ROLE">
       <DasType>VARCHAR2(255 char)|0us</DasType>
       <Position>7</Position>
     </column>
-    <index id="157" parent="89" name="SYS_C008232">
+    <index id="194" parent="93" name="SYS_C008232">
       <ColNames>USER_ID</ColNames>
       <CreatedTimestamp>2024-04-07.18:48:19</CreatedTimestamp>
       <ModifiedTimestamp>2024-04-07.18:48:19</ModifiedTimestamp>
@@ -656,31 +863,31 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="158" parent="89" name="SYS_C008232">
+    <key id="195" parent="93" name="SYS_C008232">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-04-07.18:48:19</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>SYS_C008232</UnderlyingIndexName>
     </key>
-    <column id="159" parent="90" name="USER_ID">
+    <column id="196" parent="94" name="USER_ID">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="160" parent="90" name="NAME">
+    <column id="197" parent="94" name="NAME">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="161" parent="90" name="EMAIL">
+    <column id="198" parent="94" name="EMAIL">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="162" parent="90" name="PASSWORD">
+    <column id="199" parent="94" name="PASSWORD">
       <DasType>VARCHAR2(50 byte)|0s</DasType>
       <Position>4</Position>
     </column>
-    <index id="163" parent="90" name="SYS_C008231">
+    <index id="200" parent="94" name="SYS_C008231">
       <ColNames>USER_ID</ColNames>
       <CreatedTimestamp>2024-04-05.02:29:02</CreatedTimestamp>
       <ModifiedTimestamp>2024-04-05.02:29:02</ModifiedTimestamp>
@@ -689,14 +896,14 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="164" parent="90" name="SYS_C008231">
+    <key id="201" parent="94" name="SYS_C008231">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-04-05.02:29:02</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>SYS_C008231</UnderlyingIndexName>
     </key>
-    <trigger id="165" parent="90" name="TRIGGER_USERS">
+    <trigger id="202" parent="94" name="TRIGGER_USERS">
       <CreatedTimestamp>2024-04-05.02:29:02</CreatedTimestamp>
       <Events>I</Events>
       <ModifiedTimestamp>2024-04-05.02:29:02</ModifiedTimestamp>
@@ -704,5 +911,33 @@
       <SourceTextLength>70</SourceTextLength>
       <Turn>before-row</Turn>
     </trigger>
+    <column id="203" parent="95" name="EVENT_TYPE">
+      <DasType>CLOB|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="204" parent="95" name="FATALITIES">
+      <DasType>NUMBER(*)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="205" parent="95" name="YEAR">
+      <DasType>NUMBER(*)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="206" parent="96" name="EVENT_TYPE">
+      <DasType>CLOB|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="207" parent="96" name="FATALITIES">
+      <DasType>NUMBER(*)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="208" parent="96" name="YEAR">
+      <DasType>NUMBER(*)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="209" parent="96" name="MAX_FATALITIES">
+      <DasType>NUMBER(*)|0s</DasType>
+      <Position>4</Position>
+    </column>
   </database-model>
 </dataSource>
